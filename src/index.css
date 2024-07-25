@@ -2,24 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+{/* cor e sombra do botão */}
 .btn {
-  background: linear-gradient(
-    92.23deg,
-    #ff56f6 21.43%,
-    #b936ee 50.63%,
-    #3bace2 100%,
-    #406aff 117.04%
-  );
-  box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
+  background: bg-gray-500;
+  box-shadow: 0px 3px 30px #ea580c;
 }
 
+{/* hover dos botões */}
 .btn:hover {
   background: linear-gradient(
     92.23deg,
-    #406aff 21.43%,
-    #3bace2 50.63%,
-    #b936ee 100%,
-    #ff56f6 117.04%
+    #fb923c 21.43%,
+    #f97316 50.63%,
+    #ea580c 100%,
+    #c2410c 117.04%
   );
 }
 
@@ -27,10 +23,10 @@
 .active {
   background: linear-gradient(
     92.23deg,
-    #406aff 21.43%,
-    #3bace2 50.63%,
-    #b936ee 100%,
-    #ff56f6 117.04%
+    #fb923c 21.43%,
+    #f97316 50.63%,
+    #ea580c 100%,
+    #c2410c 117.04%
   );
 }
 
@@ -63,7 +59,7 @@
     @apply text-base;
   }
   .text-gradient {
-    @apply bg-gradient-to-r text-transparent bg-clip-text from-[#ff8c20] to-[#000000] font-bold font-primary hover:from-[#000000] hover:to-[#ff8c20];
+    @apply bg-gradient-to-r text-transparent bg-clip-text from-[#fb923c] to-[#ea580c] font-bold font-primary hover:from-[#fb923c] hover:to-[#ea580c];
   }
   .section {
     @apply py-8 lg:py-24 lg:h-screen flex items-center;

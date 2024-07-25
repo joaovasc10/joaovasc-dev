@@ -10,7 +10,7 @@ import Contact from './components/Contact';
 
 const App = () => {
   return (
-    <div className='bg-site bg-no-repeat bg-cover overflow-hidden'>
+    <div className='bg-gray-900 bg-no-repeat bg-cover overflow-hidden'>
       <Header />
       <Banner />
       <Nav />
@@ -18,7 +18,7 @@ const App = () => {
       <Services />
       <Work />
       <Contact />
-      
+    
     </div>
   );
 };

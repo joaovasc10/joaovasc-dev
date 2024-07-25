@@ -3,6 +3,7 @@ import React from 'react';
 import Image from '../assets/autorretrato-removebg.png';
 // icons 
 import { FaGithub, FaLinkedinIn, FaLinkedin } from  'react-icons/fa'
+import { MdOutlineMarkEmailUnread } from "react-icons/md";
 // type animation
 import { TypeAnimation } from 'react-type-animation';
 // motion
@@ -32,9 +33,10 @@ const Banner = () => {
               viewport={ {once: false, amount: 0.7 }}
               className='mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold leading-[1]'
             >
-              <span className='text-white mr-4'>Web FullStack Developer</span>
+              <span className='text-white mr-4'>FullStack Web Developer</span>
               <br/>
 
+              {/* type animation */}
               <TypeAnimation sequence={[
                 'e Fotógrafo 📷',
                 2000,
@@ -62,12 +64,14 @@ const Banner = () => {
               initial="hidden" 
               whileInView={'show'} 
               viewport={ {once: false, amount: 0.7 }}
-              className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
-              <button className='btn btn-lg'>
-                Trabalhe comigo
-              </button>
+              className='flex max-w-max gap-x-12 items-center mb-12 mx-auto lg:mx-0'>
               <a href='/assets/Currículo-pt.pdf' download='Currículo-pt.pdf' className='text-gradient btn-link'>
-                Currículo
+                <button className='btn btn-lg'>
+                  Currículo
+                </button>
+              </a>
+              <a href='https://wa.me/5551998552079?text=Ol%C3%A1!%20Vim%20atrav%C3%A9s%20do%20seu%20portf%C3%B3lio' className='text-gradient btn-link'>
+                Contato
               </a>
             </motion.div>
             {/* social */}
@@ -83,6 +87,9 @@ const Banner = () => {
               <a href='https://www.linkedin.com/in/joaovasc10/' target="_blank" rel="noopener noreferrer">
                 <FaLinkedin size={24} className='text-white' />
               </a>
+              <a href='joaovasc10@gmail.com' target='_blank' rel="noopener noreferrer">
+                <MdOutlineMarkEmailUnread size={24} className='text-white' />
+              </a>
             </motion.div>
           </div>
           {/* image */}
@@ -90,7 +97,7 @@ const Banner = () => {
             variants={fadeIn('up', 0.7)} 
             initial="hidden" 
             whileInView={'show'} 
-            className='hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px] mx-auto mix-blend-lighten translate-y-500'>
+            className='hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px] mx-auto mix-blend-lighten items-center justify-center'>
             <img src={ Image } alt='avatar'/>
           </motion.div>
         </div>
