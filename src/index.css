@@ -65,3 +65,45 @@
     @apply py-8 lg:py-24 lg:h-screen flex items-center;
   }
 }
+
+{/* css do tech stack */}
+.tech-stack {
+  text-align: center;
+  color: white;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  justify-items: center;
+}
+
+.tech-item {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.tech-item img {
+  width: 50%;
+}
+
+.tech-item.active {
+  transform: scale(1.1);
+  background-color: #444;
+}
+
+.tech-description {
+  margin-top: 20px;
+  background-color: #222;
+  padding: 20px;
+  border-radius: 8px;
+}
+
